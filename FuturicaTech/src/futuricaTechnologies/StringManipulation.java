@@ -26,6 +26,7 @@ public class StringManipulation {
 			String updatedCompany = new StringBuilder(company).reverse().toString();
 			String updatedString = updatedName.concat(" works with ").concat(updatedCompany)
 					.concat(" at designation ").concat(updatedDesignation);
+			
 			System.out.println();
 			System.out.println("Output after performing String Operations");
 			System.out.println(updatedString);
@@ -35,6 +36,7 @@ public class StringManipulation {
 			String crud1 = updatedString.replace(updatedCompany, company)
 					.replace(updatedDesignation, designation);
 			String crud2 = crud1.replaceAll("[ao]", "");
+			
 			System.out.println();
 			System.out.println("Output After Performing CRUD Operations");
 			System.out.println(crud2);
@@ -43,8 +45,9 @@ public class StringManipulation {
 			//JSON object
 			JSONObject jsonObject = new JSONObject();
 			jsonObject.put("Name", name);
-			jsonObject.put("Department", designation);
+			jsonObject.put("Designation", designation);
 			jsonObject.put("Company", company);
+			
 			System.out.println();
 			System.out.println("Json Object");
 			System.out.println(jsonObject.toString());
@@ -53,6 +56,7 @@ public class StringManipulation {
 			//loop activity
 			String[] strArray = crud1.split(" ");
 			int count = 1;
+			
 			System.out.println();
 			System.out.println("Loop Activity :");
 			for(String s : strArray) {
